@@ -36,6 +36,11 @@ export const GALLERY_ITEM_V : GalleryItem[] = [
         imgSrc: require('@/assets/gallery/vertical/7.jpg'),
         title: 'Vertical Image 7',
     },
+    {
+        id: 8,
+        imgSrc: require('@/assets/gallery/vertical/8.jpg'),
+        title: 'Vertical Image 8',
+    },
 ]
 
 export const GALLERY_ITEM_H : GalleryItem[] = [
@@ -73,5 +78,10 @@ export const GALLERY_ITEM_H : GalleryItem[] = [
         id: 7,
         imgSrc: require('@/assets/gallery/horizontal/7.jpg'),
         title: 'Horizontal Image 7',
+    },
+    {
+        id: 8,
+        imgSrc: require('@/assets/gallery/horizontal/8.jpg'),
+        title: 'Horizontal Image 8',
     },
 ]
