@@ -19,14 +19,21 @@ const themeStyle = StyleSheet.create({
         textAlign: 'center',
     },
     bodyContainer: {
-
         flex: 1,
-        flexDirection: 'row',
-        justifyContent: 'center',
+        flexDirection: 'column',
+        alignItems: 'center',
+        padding: 30,
+        gap: 20,
     },
     textSubtitle: {
         fontFamily: 'Inter_400Regular',
     },
+    buttonContainer: {
+        flexWrap: 'wrap',
+        width: '80%',
+        gap: 10,
+
+    }
 
 })
 
