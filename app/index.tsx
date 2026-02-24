@@ -9,8 +9,11 @@ const index = () => {
   return (
     <SafeAreaProvider>
       <SafeAreaView style={[themeStyle.container, colors.primary]}>
-        <View style={themeStyle.container}>
-          <Text style={themeStyle.textTheme}>Welcome To Hogwarts Gallery</Text>
+        <View style={[themeStyle.headerContainer]}>
+          <Text style={[themeStyle.textTheme, themeStyle.textTitle]}>Welcome To Hogwarts Gallery</Text>
+        </View>
+        <View style={[themeStyle.bodyContainer]}>
+          <Text style={[themeStyle.textTheme, themeStyle.textSubtitle]}>This is the body</Text>
         </View>
       </SafeAreaView>
     </SafeAreaProvider>
