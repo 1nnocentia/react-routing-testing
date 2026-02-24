@@ -14,6 +14,7 @@ const vertical = () => {
             <FlatList
               data={GALLERY_ITEM_V}
               numColumns={1}
+              showsVerticalScrollIndicator={false}
               keyExtractor={(item) => item.id.toString()}
               renderItem={({ item }) => (
                   <View style={[galleryStyle.container, galleryStyle.imageContainer]}>
