@@ -31,8 +31,8 @@ const themeStyle = StyleSheet.create({
         flexWrap: 'wrap',
         width: '80%',
         gap: 10,
-
-    }
+    },
+    
 
 })
 

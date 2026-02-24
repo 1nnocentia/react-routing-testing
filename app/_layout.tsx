@@ -1,7 +1,7 @@
 import { SplashScreen, Stack } from "expo-router";
 import { useFonts, AlmendraDisplay_400Regular } from '@expo-google-fonts/almendra-display'
 import { Inter_400Regular } from '@expo-google-fonts/inter'
-import { useEffect } from "react";
+import { useEffect } from "react"
 
 export default function RootLayout() {
   const [fontsLoaded] = useFonts({
@@ -19,7 +19,13 @@ export default function RootLayout() {
     return null;
   }
   return (
-    <Stack>
+    <Stack screenOptions={{ 
+      headerStyle: {
+        backgroundColor: '#1F3F30'
+      },
+      headerTintColor: '#fff',
+      headerBackButtonDisplayMode: 'minimal',
+     }}>
       <Stack.Screen name="index" options={{ headerShown: false }} />
     </Stack>
 );
