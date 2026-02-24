@@ -8,3 +8,5 @@ const colors = StyleSheet.create({
         backgroundColor: '#2a623d',
     }
 })
+
+export default colors;

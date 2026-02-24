@@ -2,7 +2,7 @@ import { View, Text } from 'react-native'
 import React from 'react'
 import { router } from 'expo-router'
 
-router.push('/vertical')
+// router.push('/vertical')
 
 const vertical = () => {
   return (

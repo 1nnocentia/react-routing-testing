@@ -4,8 +4,11 @@ const themeStyle = StyleSheet.create({
     container: {
         flex: 1,
     },
-    textColor: {
-        color: '#FFFFFF',
+    textTheme: {
+        fontFamily: 'AlmendraDisplay_400Regular',
+        color: '#fff',
     },
 
 })
+
+export default themeStyle;
