@@ -12,10 +12,10 @@ const index = () => {
     <SafeAreaProvider>
       <SafeAreaView style={[themeStyle.container, colors.primary]}>
         <View style={[themeStyle.headerContainer]}>
-          <Text style={[themeStyle.textTheme, themeStyle.textTitle]}>Welcome To Hogwarts Gallery</Text>
+          <Text style={[themeStyle.textTheme, themeStyle.textTitle, colors.textPrimary]}>Welcome To Hogwarts Gallery</Text>
         </View>
         <View style={[themeStyle.bodyContainer]}>
-          <Text style={[themeStyle.textTheme, themeStyle.textSubtitle]}>This is the body</Text>
+          <Text style={[themeStyle.textTheme, themeStyle.textSubtitle, colors.textPrimary]}>This is the body</Text>
           <View style={[themeStyle.buttonContainer]}>
             <CustomButton title="Profile" onPress={() => router.push("/profile")} />
             <CustomButton title="Counter" onPress={() => router.push("/counter")} />

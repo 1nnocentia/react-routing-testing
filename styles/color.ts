@@ -6,7 +6,10 @@ const colors = StyleSheet.create({
     },
     secondary: {
         backgroundColor: '#2a623d',
-    }
+    },
+    textPrimary: {
+        color: '#fff',
+    },
 })
 
 export default colors;

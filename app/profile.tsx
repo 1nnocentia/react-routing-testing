@@ -1,16 +1,30 @@
-import { View, Text } from 'react-native'
+import { View, Text, Image } from 'react-native'
 import React from 'react'
-import { router } from 'expo-router/build/exports'
 import { SafeAreaProvider, SafeAreaView } from 'react-native-safe-area-context'
 import themeStyle from '@/styles/theme'
-
-// router.push('/profile')
+import colors from '@/styles/color'
+import profileStyle from '@/styles/profileStyles'
+import { USER_PROFILE } from '@/constant/profileConstant'
+import CustomButton from '@/components/customButton'
+// import { useRouter } from 'expo-router'
 
 const profile = () => {
+  const { imgSrc, name, userTitle } = USER_PROFILE[0];
+  // const router = useRouter();
+
   return (
     <SafeAreaProvider>
-      <SafeAreaView style={themeStyle.container}>
-        <Text style={themeStyle.textTheme}>Profile</Text>
+      <SafeAreaView style={[themeStyle.container, colors.primary]}>
+        <View style={profileStyle.profileContainer}>
+          <Image source={imgSrc} style={profileStyle.profilePicture} />
+          <View style={profileStyle.descriptionContainer}>
+            <Text style={[themeStyle.textSubtitle, colors.textPrimary, profileStyle.textTitle]}>{name}</Text>
+            <Text style={[themeStyle.textSubtitle, colors.textPrimary, profileStyle.textDescription]}>{userTitle}</Text>
+          </View>
+          <View style={[themeStyle.buttonContainer]}>
+              <CustomButton title="Edit Profile" onPress={() => alert("Edit Profile pressed")} />
+          </View>
+        </View>
       </SafeAreaView>
     </SafeAreaProvider>
   )

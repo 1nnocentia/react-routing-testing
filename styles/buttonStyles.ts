@@ -1,3 +1,4 @@
+import BackButton from "@/components/backButton";
 import { StyleSheet } from "react-native"
 
 const buttonStyles = StyleSheet.create({
@@ -10,6 +11,9 @@ const buttonStyles = StyleSheet.create({
     buttonText: {
         color: '#fff',
         textAlign: 'center',
+    },
+    backButton: {
+
     }
 })
 

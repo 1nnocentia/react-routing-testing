@@ -7,7 +7,6 @@ const themeStyle = StyleSheet.create({
     },
     textTheme: {
         fontFamily: 'AlmendraDisplay_400Regular',
-        color: '#fff',
     },
     headerContainer: {
         marginVertical: 45,
