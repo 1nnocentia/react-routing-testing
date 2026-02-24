@@ -1,18 +1,27 @@
-import { View, Text } from 'react-native'
+import { View, Text, FlatList, Image } from 'react-native'
 import React from 'react'
-import { router } from 'expo-router/build/exports'
 import { SafeAreaProvider, SafeAreaView } from 'react-native-safe-area-context'
 import themeStyle from '@/styles/theme'
-import profileStyle from '@/styles/profileStyles'
 import colors from '@/styles/color'
+import { GALLERY_ITEM_V } from '@/constant/galleryConstant'
+import { galleryStyle } from '@/styles/galleryStyles'
 
-// router.push('/horizontal')
 
 const vertical = () => {
   return (
     <SafeAreaProvider>
-          <SafeAreaView style={[themeStyle.container, colors.primary]}>
-            <Text style={[themeStyle.textSubtitle, colors.textPrimary, profileStyle.textTitle]}>Vertical Gallery</Text>
+          <SafeAreaView style={[themeStyle.container, galleryStyle.verticalGalleryContainer,colors.primary]}>
+            <FlatList
+              data={GALLERY_ITEM_V}
+              numColumns={1}
+              keyExtractor={(item) => item.id.toString()}
+              renderItem={({ item }) => (
+                  <View style={[galleryStyle.container, galleryStyle.imageContainer]}>
+                    <Image source={item.imgSrc} style={galleryStyle.image} />
+                    <Text style={[galleryStyle.imageText]}>{item.title}</Text>
+                  </View>
+              )}
+            />
           </SafeAreaView>
         </SafeAreaProvider>
   )

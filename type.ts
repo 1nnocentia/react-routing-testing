@@ -3,3 +3,9 @@ export interface UserProfile {
     name: string;
     userTitle: string;
 }
+
+export interface GalleryItem {
+    id: number;
+    imgSrc: any;
+    title: string;
+}
