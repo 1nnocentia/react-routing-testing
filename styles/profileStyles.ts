@@ -23,6 +23,13 @@ const profileStyles = StyleSheet.create({
     },
     textDescription: {
         fontSize: 14,
+    },
+    input: {
+        borderBottomWidth: 1,
+        borderColor: '#ccc',
+        paddingVertical: 4,
+        marginBottom: 8,
+        color: '#fff',
     }
 })
 
