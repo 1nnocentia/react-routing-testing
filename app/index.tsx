@@ -15,7 +15,7 @@ const index = () => {
           <Text style={[themeStyle.textTheme, themeStyle.textTitle, colors.textPrimary]}>Welcome To Hogwarts Gallery</Text>
         </View>
         <View style={[themeStyle.bodyContainer]}>
-          <Text style={[themeStyle.textTheme, themeStyle.textSubtitle, colors.textPrimary]}>This is the body</Text>
+          <Text style={[themeStyle.textTheme, themeStyle.textSubtitle, colors.textPrimary]}>Portus</Text>
           <View style={[themeStyle.buttonContainer]}>
             <CustomButton title="Profile" onPress={() => router.push("/profile")} />
             <CustomButton title="Counter" onPress={() => router.push("/counter")} />

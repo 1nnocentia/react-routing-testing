@@ -6,11 +6,9 @@ import colors from '@/styles/color'
 import profileStyle from '@/styles/profileStyles'
 import { USER_PROFILE } from '@/constant/profileConstant'
 import CustomButton from '@/components/customButton'
-// import { useRouter } from 'expo-router'
 
 const profile = () => {
   const { imgSrc, name, userTitle } = USER_PROFILE[0];
-  // const router = useRouter();
 
   return (
     <SafeAreaProvider>

@@ -26,6 +26,7 @@ const themeStyle = StyleSheet.create({
     },
     textSubtitle: {
         fontFamily: 'Inter_400Regular',
+        fontSize: 18,
     },
     buttonContainer: {
         flexWrap: 'wrap',
